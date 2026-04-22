@@ -7,11 +7,17 @@ def hesap_makinesi():
     secim = input("Seçiminiz: ")
 
     if secim == "1":
-        print("Toplama seçildi")
+        toplama()
+        hesap_makinesi()
     elif secim == "2":
         print("Çıkarma seçildi")
     elif secim == "0":
         return
+    
+def toplama():
+    a = float(input("1. sayı: "))
+    b = float(input("2. sayı: "))
+    print("Sonuç:", a + b)
     
 def ana_menu():
     print("\nPYTHON PROJE")
