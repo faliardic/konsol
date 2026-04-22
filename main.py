@@ -28,6 +28,9 @@ def hesap_makinesi():
         hesap_makinesi()   
     elif secim == "0":
         return
+    else:
+        print("Geçersiz seçim")
+        hesap_makinesi()
     
 def toplama():
     a = float(input("1. sayı: "))
