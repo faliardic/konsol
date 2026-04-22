@@ -3,6 +3,7 @@ def hesap_makinesi():
     print("1- Toplama")
     print("2- Çıkarma")
     print("3- Çarpma")
+    print("4- Bölme")
     print("0- Ana Menü")
 
     secim = input("Seçiminiz: ")
@@ -15,6 +16,9 @@ def hesap_makinesi():
         hesap_makinesi()
     elif secim == "3":
         carpma()
+        hesap_makinesi()
+    elif secim == "4":
+        bolme()
         hesap_makinesi()
     elif secim == "0":
         return
@@ -34,6 +38,16 @@ def carpma():
     b = float(input("2. sayı: "))
     print("Sonuç:", a * b)
             
+def bolme():
+    a = float(input("1. sayı: "))
+    b = float(input("2. sayı: "))
+
+    if b == 0:
+        print("0'a bölünemez")
+        return
+
+    print("Sonuç:", a / b)
+                
 def ana_menu():
     print("\nPYTHON PROJE")
     print("1- Hesap Makinesi")
