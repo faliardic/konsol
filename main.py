@@ -1,9 +1,12 @@
+import math
+
 def hesap_makinesi():
     print("\nHESAP MAKİNESİ")
     print("1- Toplama")
     print("2- Çıkarma")
     print("3- Çarpma")
     print("4- Bölme")
+    print("5- Karekök")
     print("0- Ana Menü")
 
     secim = input("Seçiminiz: ")
@@ -20,6 +23,9 @@ def hesap_makinesi():
     elif secim == "4":
         bolme()
         hesap_makinesi()
+    elif secim == "5":
+        karekok()
+        hesap_makinesi()   
     elif secim == "0":
         return
     
@@ -47,6 +53,15 @@ def bolme():
         return
 
     print("Sonuç:", a / b)
+
+def karekok():
+    sayi = float(input("Sayı: "))
+
+    if sayi < 0:
+        print("Negatif sayının karekökü alınamaz")
+        return
+
+    print("Sonuç:", math.sqrt(sayi))
                 
 def ana_menu():
     print("\nPYTHON PROJE")
