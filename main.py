@@ -77,5 +77,6 @@ def ana_menu():
         hesap_makinesi()
     elif secim == "0":
         return
+    ana_menu()
 
 ana_menu()
