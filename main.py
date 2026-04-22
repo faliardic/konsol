@@ -1,3 +1,9 @@
+def hesap_makinesi():
+    print("\nHESAP MAKİNESİ")
+    print("1- Toplama")
+    print("2- Çıkarma")
+    print("0- Ana Menü")
+
 def ana_menu():
     print("\nPYTHON PROJE")
     print("1- Hesap Makinesi")
@@ -6,7 +12,7 @@ def ana_menu():
     secim = input("Seçiminiz: ")
 
     if secim == "1":
-        print("Hesap makinesi seçildi")
+        hesap_makinesi()
     elif secim == "0":
         return
 
