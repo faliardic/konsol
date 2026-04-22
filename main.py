@@ -10,7 +10,8 @@ def hesap_makinesi():
         toplama()
         hesap_makinesi()
     elif secim == "2":
-        print("Çıkarma seçildi")
+        cikarma()
+        hesap_makinesi()
     elif secim == "0":
         return
     
@@ -19,6 +20,11 @@ def toplama():
     b = float(input("2. sayı: "))
     print("Sonuç:", a + b)
     
+def cikarma():
+    a = float(input("1. sayı: "))
+    b = float(input("2. sayı: "))
+    print("Sonuç:", a - b)
+        
 def ana_menu():
     print("\nPYTHON PROJE")
     print("1- Hesap Makinesi")
