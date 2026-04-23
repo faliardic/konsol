@@ -14,4 +14,4 @@ def bmi_hesapla():
         print("Fazla kilolu")
     else: 
         print("Obez")
-        
+    
