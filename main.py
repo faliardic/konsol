@@ -1,12 +1,14 @@
 from moduller.hesap_makinesi import hesap_makinesi
 from moduller.bmi import bmi_hesapla
 from moduller.birim_cevirici import birim_cevirici
+from moduller.matoyun_1 import carpma_oyun
         
 def ana_menu():
     print("\nPYTHON PROJE")
     print("1- Hesap Makinesi")
     print("2- Vücut Kitle İndeksi")
     print("3- Birim çevirici")
+    print("4- Çarpma Oyunu")
     print("0- Çıkış")
 
     secim = input("Seçiminiz: ")
@@ -17,6 +19,8 @@ def ana_menu():
         bmi_hesapla()
     if secim == "3":
         birim_cevirici()
+    if secim == "4":
+        carpma_oyun()
     elif secim == "0":
         return
     ana_menu()
