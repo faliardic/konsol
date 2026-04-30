@@ -4,6 +4,7 @@ from moduller.birim_cevirici import birim_cevirici
 from moduller.matoyun_1 import carpma_oyun
 from moduller.sifre import sifre
 from moduller.yakıt import yakit
+from moduller.kredi import kredi
 
         
 def ana_menu():
@@ -14,6 +15,7 @@ def ana_menu():
     print("4- Çarpma Oyunu")
     print("5- Şifre Üretici")
     print("6- Araç Yakıt Hesabı")
+    print("7- Kredi Taksiti Hesabı")
     print("0- Çıkış")
 
     secim = input("Seçiminiz: ")
@@ -30,8 +32,11 @@ def ana_menu():
         sifre()
     if secim == "6":
         yakit()
+    if secim == "7":
+        kredi()
     elif secim == "0":
         return
+    
     ana_menu()
 
 ana_menu()

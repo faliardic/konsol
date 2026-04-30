@@ -12,7 +12,7 @@ def yakit():
         kmTl = yuz * fiyat / 100 
         print(f"Aracınız km'de {kmTl:.2f} ₺ yakmış")
         
-    if secim == "2":
+    elif secim == "2":
         mesafe = float(input("Kat edilen mesafe(km): "))
         alYakLt = float(input("Alınan yakıt(lt): "))
         alYakTl = float(input("Alınan yakıt(tl): "))
@@ -21,7 +21,9 @@ def yakit():
         print(f"\n100 Kilometrede {birLt:.2f} lt ve,")
         print(f"1 Kilometrede {birTl:.2f} ₺ harcadınız")
     
-    if secim == "0":
+    elif secim == "0":
         return
     
+    else:
+        print("Hatalı seçim")
     
