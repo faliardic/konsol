@@ -13,12 +13,12 @@ def sifre():
     if secim == "1":
         dortPin = random.randint(1000, 9999)
         print(dortPin)
-        sifre()
+        
     
     if secim == "2":
         altiPin = random.randint(100000, 999999)
         print(altiPin)
-        sifre()
+       
     
     if secim == "3":
         karakterler = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%"

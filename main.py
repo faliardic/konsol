@@ -3,6 +3,8 @@ from moduller.bmi import bmi_hesapla
 from moduller.birim_cevirici import birim_cevirici
 from moduller.matoyun_1 import carpma_oyun
 from moduller.sifre import sifre
+from moduller.yakıt import yakit
+
         
 def ana_menu():
     print("\nPYTHON PROJE")
@@ -11,6 +13,7 @@ def ana_menu():
     print("3- Birim çevirici")
     print("4- Çarpma Oyunu")
     print("5- Şifre Üretici")
+    print("6- Araç Yakıt Hesabı")
     print("0- Çıkış")
 
     secim = input("Seçiminiz: ")
@@ -25,6 +28,8 @@ def ana_menu():
         carpma_oyun()
     if secim == "5":
         sifre()
+    if secim == "6":
+        yakit()
     elif secim == "0":
         return
     ana_menu()
