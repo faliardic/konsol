@@ -5,17 +5,19 @@ from moduller.matoyun_1 import carpma_oyun
 from moduller.sifre import sifre
 from moduller.yakıt import yakit
 from moduller.kredi import kredi
+from moduller.protein import protein_ihtiyaci
 
         
 def ana_menu():
     print("\nPYTHON PROJE")
     print("1- Hesap Makinesi")
     print("2- Vücut Kitle İndeksi")
-    print("3- Birim çevirici")
+    print("3- Birim Çevirici")
     print("4- Çarpma Oyunu")
     print("5- Şifre Üretici")
     print("6- Araç Yakıt Hesabı")
     print("7- Kredi Taksiti Hesabı")
+    print("8- Günlük Protein İhtiyacı")
     print("0- Çıkış")
 
     secim = input("Seçiminiz: ")
@@ -34,6 +36,8 @@ def ana_menu():
         yakit()
     if secim == "7":
         kredi()
+    if secim == "8":
+        protein_ihtiyaci()
     elif secim == "0":
         return
     
