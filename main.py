@@ -6,6 +6,7 @@ from moduller.sifre import sifre
 from moduller.yakıt import yakit
 from moduller.kredi import kredi
 from moduller.protein import protein_ihtiyaci
+from moduller.matoyun_2 import tahmin
 
         
 def ana_menu():
@@ -18,6 +19,7 @@ def ana_menu():
     print("6- Araç Yakıt Hesabı")
     print("7- Kredi Taksiti Hesabı")
     print("8- Günlük Protein İhtiyacı")
+    print("9- Sayı Tahmin Oyunu")    # tamamen kendim yaptım
     print("0- Çıkış")
 
     secim = input("Seçiminiz: ")
@@ -38,6 +40,9 @@ def ana_menu():
         kredi()
     if secim == "8":
         protein_ihtiyaci()
+    if secim == "9":
+        tahmin()
+    
     elif secim == "0":
         return
     
